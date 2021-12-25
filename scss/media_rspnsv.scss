@@ -1,0 +1,61 @@
+@import "./configs";
+
+@media (max-width: $spec_scrn) {
+  #responsive-tablets::after {
+    transform: skewY(-10deg);
+  }
+  #responsive-computers::before {
+    transform: skewY(-8deg);
+  }
+}
+
+@media (max-width: $extra_large_scrn) {
+  .container {
+    width: 90%;
+  }
+  .responsive-tablets-wrapper-text {
+    width: 70%;
+  }
+  #responsive-tablets::after {
+    transform: skewY(-11.5deg);
+  }
+  #responsive-computers::before {
+    transform: skewY(-10deg);
+  }
+}
+
+@media (max-width: $large_scrn) {
+  #responsive-tablets::after {
+    transform: skewY(-13deg);
+  }
+  #responsive-computers::before {
+    transform: skewY(-11.5deg);
+  }
+}
+
+@media (max-width: $extra_medium_scrn) {
+  #responsive-tablets::after {
+    transform: skewY(-15deg);
+  }
+  #responsive-computers::before {
+    transform: skewY(-13.5deg);
+  }
+  .responsive-computers-wrapper-icon {
+    margin-right: 40px;
+  }
+  .responsive-computers-wrapper-text-content {
+    display: none;
+  }
+  .responsive-computers-wrapper-text-rspnsv {
+    display: block;
+  }
+}
+
+@media (max-width: $medium_scrn) {
+  #responsive-tablets::after {
+    transform: skewY(-17deg);
+  }
+  #responsive-computers::before {
+    transform: skewY(-15.5deg);
+  }
+}

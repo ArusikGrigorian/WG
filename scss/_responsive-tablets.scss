@@ -1,0 +1,80 @@
+#responsive-tablets {
+  padding-top: 90px;
+  background-color: $primary-green;
+  position: relative;
+
+  @include display-flex(row, center, center);
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    bottom: 0;
+    transform-origin: right;
+    transform: skewY(-8deg);
+  }
+}
+
+.responsive-tablets-wrapper {
+  position: relative;
+
+  @include display-flex(column, center, center);
+
+  &-icon {
+    align-self: flex-start;
+  }
+
+  &-text {
+    position: absolute;
+    top: 200px;
+
+    @include display-flex(column, center, center);
+
+    &-title {
+      @include text-format(
+        $primary,
+        $large,
+        fontWeight(semi_bold),
+        center,
+        unset
+      );
+    }
+
+    &-content {
+      margin-top: 40px;
+      line-height: 20px;
+
+      @include text-format(
+        $primary,
+        $small,
+        fontWeight(regular),
+        justify,
+        unset
+      );
+    }
+  }
+}
+
+#responsive-computers {
+  margin-top: 258px;
+  padding-top: 90px;
+  background-color: $secondary-green;
+  position: relative;
+
+  @include display-flex(row, center, center);
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    transform-origin: left;
+    transform: skewY(-6deg);
+  }
+}

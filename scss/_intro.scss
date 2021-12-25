@@ -1,0 +1,112 @@
+#intro {
+  height: 100vh;
+
+  @include background-format(intro, cover);
+  @include display-flex(column, center, center);
+}
+
+.intro-wrapper {
+  margin-top: -80px;
+  position: relative;
+
+  @include display-flex(column, center, center);
+
+  &-logo {
+    @include circle(274px, 274px, $primary-black, 100%);
+    @include display-flex(row, center, center);
+  }
+
+  &-text {
+    margin-top: 78px;
+
+    @include display-flex(column, center, center);
+
+    &-first {
+      @include text-format(
+        $primary,
+        $extra_large,
+        fontWeight(light),
+        center,
+        uppercase
+      );
+    }
+
+    &-scnd {
+      @include text-format(
+        $primary,
+        $extra_large,
+        fontWeight(semi_bold),
+        center,
+        uppercase
+      );
+    }
+  }
+
+  &-form {
+    width: 50%;
+    background-color: $primary;
+    border-radius: 2px;
+    position: absolute;
+    top: 500px;
+
+    @include box-shadow(0px, 1px, 5px, rgba(0, 0, 0, 0.28));
+    @include display-flex(column, center, center);
+
+    &-code {
+      width: 80%;
+      margin-top: 31px;
+
+      @include paddings(12px, 16px);
+      @include borders(1px, solid, $tertiary-grey, none, 2px);
+
+      &::placeholder {
+        @include text-format(
+          $secondary-grey,
+          $extra-small,
+          fontWeight(regular),
+          left,
+          unset
+        );
+      }
+    }
+
+    &-cities {
+      margin-top: 25px;
+
+      @include flex-wrap(wrap, stretch);
+
+      &-city {
+        width: 20%;
+      }
+    }
+
+    &-text {
+      width: 70%;
+      margin-top: 27px;
+
+      @include text-format(
+        $quinary-grey,
+        $extra-small,
+        fontWeight(regular),
+        center,
+        unset
+      );
+    }
+
+    &-btn {
+      background-color: $primary-blue;
+      margin-top: 24px;
+      margin-bottom: 31px;
+
+      @include paddings(13px, 36px);
+      @include borders;
+      @include text-format(
+        $primary,
+        $medium,
+        fontWeight(semi_bold),
+        center,
+        uppercase
+      );
+    }
+  }
+}

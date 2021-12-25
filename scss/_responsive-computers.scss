@@ -1,0 +1,46 @@
+.responsive-computers-wrapper {
+  @include display-flex(row, center, flex-start);
+
+  &-icon {
+    margin-right: 70px;
+
+    &-basic {
+      margin-left: -100px;
+    }
+  }
+
+  &-text {
+    width: 35%;
+
+    @include display-flex(column, flex-start, flex-start);
+
+    &-title {
+      @extend .responsive-tablets-wrapper-text-title;
+      text-align: left;
+    }
+
+    &-content {
+      @extend .responsive-tablets-wrapper-text-content;
+    }
+
+    &-rspnsv {
+      display: none;
+      @extend .responsive-tablets-wrapper-text-content;
+    }
+
+    &-button {
+      margin-top: 40px;
+      background-color: $secondary-green;
+
+      @include paddings(15px, 33px);
+      @include borders(3px, solid, $primary, none, $radius: 5px);
+      @include text-format(
+        $primary,
+        $extra-medium,
+        fontWeight(semi_bold),
+        center,
+        unset
+      );
+    }
+  }
+}

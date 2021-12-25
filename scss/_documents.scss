@@ -1,0 +1,53 @@
+#documents {
+  padding: 200px 111px;
+  background-color: $primary;
+
+  @include display-flex(row, center, center);
+}
+
+.documents-wrapper {
+  margin-top: 100px;
+
+  @include flex-wrap(wrap, space-between);
+
+  &-document {
+    width: 40%;
+
+    @include display-flex(row, center, center);
+
+    &:first-child {
+      margin-right: 80px;
+    }
+
+    &-icon {
+      margin-right: 30px;
+    }
+
+    &-text {
+      @include display-flex(column, flex-start, flex-start);
+
+      &-title {
+        @include text-format(
+          $primary-black,
+          $extra-medium,
+          fontWeight(semi_bold),
+          left,
+          unset
+        );
+      }
+
+      &-content {
+        margin-top: 20px;
+        line-height: 20px;
+
+        @include text-format(
+          $secondary,
+          $small,
+          fontWeight(regular),
+          left,
+          unset
+        );
+      }
+    }
+  }
+}

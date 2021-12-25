@@ -1,0 +1,10 @@
+#footer {
+  background-color: $secondary-green;
+  padding: 22px 0;
+}
+
+.copyright {
+  @extend .responsive-tablets-wrapper-text-content;
+  @include display-flex(row, center, center);
+  margin-top: unset;
+}

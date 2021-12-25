@@ -1,0 +1,77 @@
+/*for font families*/
+/*for text colors*/
+/*for input borders*/
+/*for all kind of backgrounds*/
+/*for font sizes*/
+/*for media queries*/
+
+@media (max-width: 1920px) {
+  #responsive-tablets::after {
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+  }
+  #responsive-computers::before {
+    -webkit-transform: skewY(-8deg);
+    transform: skewY(-8deg);
+  }
+}
+
+@media (max-width: 1284px) {
+  .container {
+    width: 90%;
+  }
+  .responsive-tablets-wrapper-text {
+    width: 70%;
+  }
+  #responsive-tablets::after {
+    -webkit-transform: skewY(-11.5deg);
+    transform: skewY(-11.5deg);
+  }
+  #responsive-computers::before {
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+  }
+}
+
+@media (max-width: 1200px) {
+  #responsive-tablets::after {
+    -webkit-transform: skewY(-13deg);
+    transform: skewY(-13deg);
+  }
+  #responsive-computers::before {
+    -webkit-transform: skewY(-11.5deg);
+    transform: skewY(-11.5deg);
+  }
+}
+
+@media (max-width: 992px) {
+  #responsive-tablets::after {
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg);
+  }
+  #responsive-computers::before {
+    -webkit-transform: skewY(-13.5deg);
+    transform: skewY(-13.5deg);
+  }
+  .responsive-computers-wrapper-icon {
+    margin-right: 40px;
+  }
+  .responsive-computers-wrapper-text-content {
+    display: none;
+  }
+  .responsive-computers-wrapper-text-rspnsv {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  #responsive-tablets::after {
+    -webkit-transform: skewY(-17deg);
+    transform: skewY(-17deg);
+  }
+  #responsive-computers::before {
+    -webkit-transform: skewY(-15.5deg);
+    transform: skewY(-15.5deg);
+  }
+}
+/*# sourceMappingURL=media_rspnsv.css.map */
